@@ -19,7 +19,7 @@
  *
  * @link http://codex.wordpress.org/Child_Themes
  */
-add_action( 'wp_enqueue_scripts', 'planty_theme_enqueue' );
+add_action( 'wp_enqueue_scripts', 'planty_theme_enqueue', );
  
 function planty_theme_enqueue() {
 
@@ -29,5 +29,17 @@ function planty_theme_enqueue() {
 
 	// Load the stylesheet.
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
-	
+
 }
+function planty_admin_lien_nav($items)
+{
+
+    if (is_user_logged_in())
+    {
+        $items .='<li class="LienAdmin"><a href= "'. get_admin_url() .'">Admin</a></li>';
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'planty_admin_lien_nav');
+
+?>

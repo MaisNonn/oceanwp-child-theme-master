@@ -10,18 +10,30 @@ Version: 1.0
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
 /* précommande*/
-.commandes input{
-	width:110px;
-	height: 80px;
-	border-radius:10px;
-  border:none;
-}
-/*formulaire de contacte*/
 
+/*formulaire de contacte*/
+h4{
+  font-family: 'syne';
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+
+}
+.sumitee{
+  padding-left: 80px;
+}
 .wpcf7-submit{
   background-color:#E0B9B4!important;
   align-items: center!important;
+  font-family: 'syne'!important;
+  border-radius: 3px;
 }
+.has-spinner{
+  font-family: 'syne'!important;
+  font-size: 13px!important;
+  font-weight: 200!important;
+}
+/*formulaire précomande*/
 .deuxcolonnes{
   display:flex; 
   flex-direction:row;
@@ -30,7 +42,7 @@ Version: 1.0
 flex-wrap:wrap; 
 }
 .colonnes1 , .colonnes2 {
-  width:383px;
+  width: 372px;
 }
 .benvoyer{
   padding-left:55px
@@ -63,7 +75,7 @@ input[type=submit]{
 @media all and (min-width: 700px) and (max-width: 1200px) {
   .deuxcolonnes{
   display:flex; 
-  flex-direction:column;
+  flex-direction:column; }
 }
   @media all and (min-width: 1100px){
       .butoncommandes{
@@ -72,3 +84,64 @@ input[type=submit]{
   flex-direction:column;
   }
 }
+h3{
+  font-family: 'syne';
+  font-weight: 400;
+  font-size: 15px;
+ color: #FFFFFF;
+}
+.wpcf7-text {
+  background-color: #FFFFFF!important;
+}
+
+
+.plusmoins {
+  width: 81px;
+height: 56px;
+}
+.conteur{
+  top:900Px;
+}
+
+
+input {
+  width:35px;
+  padding:12px;
+  border:none;
+  border-radius:5px
+}
+
+.form {
+  width:60px;
+  position:relative;
+}
+
+
+.butt {
+  display:flex;
+  flex-direction:column;
+  width:30px;
+  align-items:center;
+  position:absolute;
+  top:0;
+  right:0;
+  height:100%
+}
+
+.un, .deux {
+  background:#DC9F96;
+  width:30px;
+  text-align:center;
+  display:block;
+  height:50%
+}
+
+.un {
+  border-radius: 0 5px 0 0;
+  border-bottom:1px solid white;
+}
+
+.deux {
+  border-radius: 0 0 5px 0;
+}
+
