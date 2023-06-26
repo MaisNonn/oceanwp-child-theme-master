@@ -33,6 +33,14 @@ h4{
   font-size: 13px!important;
   font-weight: 200!important;
 }
+
+/*+*/
+.wpcf7-form-control{
+  border: none !important;
+border-radius: 7px!important;
+}
+
+
 /*formulaire précomande*/
 .deuxcolonnes{
   display:flex; 
@@ -95,53 +103,28 @@ h3{
 }
 
 
-.plusmoins {
-  width: 81px;
-height: 56px;
+/*Lien admin*/
+#menu-header :nth-child(1) { order: 1; }
+#menu-header :nth-child(2) { order: 3; }
+#menu-header :nth-child(3) { order: 2; }
+#menu-header{
+     display: flex;
+          flex-direction: row;
 }
-.conteur{
-  top:900Px;
+/*header*/
+#menu-header .commande{
+  background-color: #DC9F96;
+font-family: 'syne';
+font-weight: 700;
+color: black;
 }
-
-
-input {
-  width:35px;
-  padding:12px;
-  border:none;
-  border-radius:5px
+#menu-header .commande a span {
+  color: rgb(255, 255, 255);
 }
-
-.form {
-  width:60px;
-  position:relative;
-}
-
-
-.butt {
-  display:flex;
-  flex-direction:column;
-  width:30px;
-  align-items:center;
-  position:absolute;
-  top:0;
-  right:0;
-  height:100%
+.custom-logo{
+  padding-left:30px ;
 }
 
-.un, .deux {
-  background:#DC9F96;
-  width:30px;
-  text-align:center;
-  display:block;
-  height:50%
+.wpcf7-form-control{
+  
 }
-
-.un {
-  border-radius: 0 5px 0 0;
-  border-bottom:1px solid white;
-}
-
-.deux {
-  border-radius: 0 0 5px 0;
-}
-
